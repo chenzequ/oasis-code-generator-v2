@@ -1,0 +1,75 @@
+// 简单表格
+.sim-table {
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-collapse: collapse;
+
+    thead th {
+        text-align: center;
+        background-color: #fafafa;
+    }
+
+    tr td {
+        text-align: center;
+    }
+
+    /*设置单元格的边框合并为1*/
+    >tbody>tr>td,
+    >tfoot>tr>td,
+    >thead>th {
+        border-bottom: 1px solid #f0f0f0;
+        border-right: 1px solid #f0f0f0;
+        padding: 8px 4px;
+    }
+
+    thead tr {
+        background-color: #fafafa !important;
+    }
+
+    tr {
+        background: #fff;
+    }
+
+    tr>th {
+        background-color: #fff;
+    }
+
+    .table-drag-cell {
+        width: 40px;
+    }
+}
+
+.prop-descriptions {
+
+    .ant-descriptions-bordered.ant-descriptions-small .ant-descriptions-item-label,
+    .ant-descriptions-bordered.ant-descriptions-small .ant-descriptions-item-content {
+        padding: 2px 4px;
+    }
+}
+
+.full-modal {
+    .ant-modal {
+        max-width: 95%;
+        top: 0;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .ant-modal-content {
+        display: flex;
+        flex-direction: column;
+        // height: calc(95vh);
+        height: calc(98vh);
+    }
+
+    .ant-modal-body {
+        flex: 1;
+        padding: 8px;
+        overflow: auto;
+    }
+}
+
+.ant-modal-body {
+    padding: 8px;
+}
